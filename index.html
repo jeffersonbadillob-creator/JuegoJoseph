@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprendo Jugando</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <h1>🌟 Aprendo Jugando 🌟</h1>
+        <p>
+          Juego didáctico para niñas y niños desde 3 años para practicar
+          <strong>abecedario</strong>, <strong>vocales</strong>,
+          <strong>números</strong> e <strong>inglés básico</strong>.
+        </p>
+      </header>
+
+      <section class="panel">
+        <h2>¿Qué quieres practicar hoy?</h2>
+        <div class="category-buttons" role="tablist" aria-label="Categorías de aprendizaje">
+          <button class="category-btn active" data-category="abecedario">🔤 Abecedario</button>
+          <button class="category-btn" data-category="vocales">🎵 Vocales</button>
+          <button class="category-btn" data-category="numeros">🔢 Números</button>
+          <button class="category-btn" data-category="english">🇬🇧 Inglés</button>
+        </div>
+      </section>
+
+      <section class="card" aria-live="polite">
+        <p class="card-label" id="cardLabel">Abecedario</p>
+        <div class="card-value" id="cardValue">A</div>
+        <p class="card-description" id="cardDescription">A de Árbol</p>
+        <button class="speak-btn" id="speakBtn">🔊 Escuchar</button>
+      </section>
+
+      <section class="controls">
+        <button id="prevBtn">⬅️ Anterior</button>
+        <button id="randomBtn">🎲 Aleatorio</button>
+        <button id="nextBtn">Siguiente ➡️</button>
+      </section>
+
+      <section class="quiz panel">
+        <h2>Mini reto</h2>
+        <p id="quizQuestion">¿Cuál es la primera letra del abecedario?</p>
+        <div id="quizOptions" class="quiz-options"></div>
+        <p id="quizFeedback" class="quiz-feedback"></p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
