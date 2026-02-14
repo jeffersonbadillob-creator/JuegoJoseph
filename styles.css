@@ -1,0 +1,153 @@
+:root {
+  --bg: #fff7f0;
+  --primary: #ff7a59;
+  --secondary: #5b8cff;
+  --success: #34c38f;
+  --text: #2d3748;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", "Trebuchet MS", sans-serif;
+  background: radial-gradient(circle at top, #fff0e0, var(--bg));
+  color: var(--text);
+}
+
+.app {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.hero {
+  text-align: center;
+  background: linear-gradient(135deg, #ffe066, #ff9f68);
+  border-radius: 20px;
+  padding: 1rem;
+  color: #402a00;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  gap: 0.5rem;
+}
+
+.tab,
+.action-btn,
+.secondary-btn,
+.option-btn {
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.75rem;
+  font-family: inherit;
+}
+
+.tab {
+  background: #ecf2ff;
+}
+
+.tab.active {
+  background: var(--secondary);
+  color: white;
+  font-weight: bold;
+}
+
+.lesson-content {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.prompt {
+  min-height: 2rem;
+}
+
+.big-card {
+  background: #f4f8ff;
+  border: 3px dashed #90b6ff;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 0.5rem 0 1rem;
+}
+
+#main-symbol {
+  display: block;
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+#main-word {
+  font-size: 1.2rem;
+}
+
+.action-btn {
+  background: var(--primary);
+  color: #fff;
+  font-weight: bold;
+}
+
+.mini-games {
+  display: grid;
+  gap: 1rem;
+}
+
+.game-block {
+  background: #f9f4ff;
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.option-btn {
+  background: #e8fff7;
+  border: 2px solid #b5f0db;
+}
+
+.secondary-btn {
+  background: var(--success);
+  color: #fff;
+  font-weight: bold;
+}
+
+.good {
+  color: #117a4c;
+  font-weight: bold;
+}
+
+.bad {
+  color: #b42318;
+  font-weight: bold;
+}
+
+@media (min-width: 800px) {
+  .tabs {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .mini-games {
+    grid-template-columns: 1fr 1fr;
+  }
+}
