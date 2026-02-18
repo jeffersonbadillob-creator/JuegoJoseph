@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Aventuras de Aprendizaje</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <h1>🎉 Mini Aventuras de Aprendizaje 🎉</h1>
+        <p>Juego didáctico para peques de 3+ años</p>
+      </header>
+
+      <section class="panel card">
+        <h2 id="section-title">Abecedario</h2>
+        <div class="tabs" role="tablist" aria-label="Secciones de aprendizaje">
+          <button class="tab active" data-section="abecedario">🔤 Abecedario</button>
+          <button class="tab" data-section="vocales">🅰️ Vocales</button>
+          <button class="tab" data-section="numeros">🔢 Números</button>
+          <button class="tab" data-section="ingles">🇬🇧 Inglés</button>
+        </div>
+
+        <div class="lesson-content">
+          <p class="prompt" id="prompt">Presiona el botón para descubrir una letra.</p>
+          <div class="big-card" id="big-card" aria-live="polite">
+            <span id="main-symbol">A</span>
+            <small id="main-word">A de Árbol</small>
+          </div>
+          <button id="next-btn" class="action-btn">Siguiente</button>
+        </div>
+      </section>
+
+      <section class="mini-games card">
+        <h2>⭐ Retos rápidos</h2>
+        <div class="game-block">
+          <h3>¿Cuál es la vocal?</h3>
+          <p id="vowel-question">Toca "Jugar" para comenzar.</p>
+          <div id="vowel-options" class="options"></div>
+          <button id="start-vowel" class="secondary-btn">Jugar</button>
+        </div>
+
+        <div class="game-block">
+          <h3>Cuenta y elige</h3>
+          <p id="count-question">Toca "Jugar" para comenzar.</p>
+          <div id="count-options" class="options"></div>
+          <button id="start-count" class="secondary-btn">Jugar</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
